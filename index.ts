@@ -27,7 +27,7 @@ async function initializeAndStartServer() {
       })
 
       app.use(
-        '/bloggerServer',
+        '/api/bloggerServer',
         getLoginController(),
         getBlogController(),
         getUserController()
