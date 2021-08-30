@@ -20,7 +20,7 @@ async function initializeAndStartServer() {
 
     app.use(getAuthMiddleWare('testjwtSecret'))
 
-    mongoose.connect('mongodb://127.0.0.1:27017/', {
+    mongoose.connect('mongodb+srv://rohitRana:superStrongPassword@cluster0.aqqqj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useFindAndModify: false,
         useUnifiedTopology: true
