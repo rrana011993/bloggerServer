@@ -8,7 +8,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 const app = express()
 
-const port = 3001
+const port = process.env.PORT || 3001
 
 async function initializeAndStartServer() {
 
@@ -34,7 +34,7 @@ async function initializeAndStartServer() {
       )
     
       // Start the server
-      app.listen(port, () => console.log(`Server listening on port ${port}!`))
+      app.listen(port,'0.0.0.0', () => console.log(`Server listening on port ${port}!`))
 }
 
 initializeAndStartServer()
